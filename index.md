@@ -1,6 +1,6 @@
 ### Hi there 👋
 
-I'm Kevin Hayes Anderson, a .Net and Angular developer with 5 years of experiance.
+I'm Kevin Hayes Anderson, a .Net and Angular developer with 5 years of experience.
 
 I’m currently working on developing .Net applications.
 
