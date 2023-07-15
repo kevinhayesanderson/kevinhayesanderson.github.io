@@ -17,6 +17,10 @@
             color: white;
             text-align: center;
         }
+
+        .modal {
+            --bs-modal-bg: #212529;
+        }
     </style>
 </head>
 
@@ -112,7 +116,9 @@
                         </li>
                         <li class="list-group-item list-group-item-action bg-dark text-white"><span
                                 class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="UC4">YAML</span>
+                                data-bs-tag="UC4">YAML_1</span>&emsp;
+                            <span class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
+                                data-bs-tag="UC5">YAML_2</span>
                         </li>
                     </ul>
                 </div>
@@ -146,14 +152,17 @@
                 aria-labelledby="model1Label" aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-dialog-centered">
                     <div class="modal-content">
-                        <div class="modal-header text-black">
+                        <div class="modal-header text-white">
                             <h6 class="modal-title" id="model1Label"></h6>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                            <div data-bs-theme="dark">
+                                <button type="button" class="btn-close" data-bs-theme="dark" data-bs-dismiss="modal"
+                                    aria-label="Close"></button>
+                            </div>
                         </div>
                         <div class="modal-body">
                             <iframe width="100%" height="100%"></iframe>
                         </div>
-                        <div class="modal-footer text-black"></div>
+                        <div class="modal-footer text-white"></div>
                     </div>
                 </div>
             </div>
@@ -237,9 +246,14 @@
                     iframe.src = 'UC-Angular_Testing.pdf#toolbar=0';
                     break;
                 case 'UC4':
-                    title.textContent = `YAML`;
+                    title.textContent = `YAML 1`;
                     footer.textContent = 'Acquired on July 2023';
-                    iframe.src = 'UC-Yaml.pdf#toolbar=0';
+                    iframe.src = 'UC-Yaml_1.pdf#toolbar=0';
+                    break;
+                case 'UC5':
+                    title.textContent = `YAML 2`;
+                    footer.textContent = 'Acquired on July 2023';
+                    iframe.src = 'UC-Yaml_2.pdf#toolbar=0';
                     break;
                 case 'LL1':
                     title.textContent = `.NET Fundamental Concepts`;
