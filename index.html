@@ -23,7 +23,6 @@
 <body class="bg-dark">
     <div class="container text-white">
         <br>
-        <br>
         <nav class="nav">
             <h2 class="display-6">Hello, Hi there<span>&#128400;</span>!</h2>
         </nav>
@@ -40,7 +39,6 @@
             <p class="lead lead fs-4">Experience performing continuous
                 integration and continuous
                 deployment using Azure DevOps.</p>
-
             <p class="lead lead fs-4">Ask me about .Net, Azure and Cloud native applications.</p>
             <p class="lead lead fs-4">How to reach me: <a href="mailto:kevinhayesanderson@gmail.com">EMail</a>,
                 <a href="https://www.linkedin.com/in/kevinhayesanderson/" target="_blank">Linkedin</a>.
@@ -48,6 +46,12 @@
             <p class="lead fs-4">My <a href="https://github.com/kevinhayesanderson" target="_blank">GitHub</a>, <a
                     href="Resume.pdf" target="_blank">Resume</a> & <a
                     href="https://www.credly.com/users/kevin-hayes-anderson" target="_blank">Credly profile</a>.</p>
+            <img height="180em"
+                src="https://github-readme-stats.vercel.app/api?username=kevinhayesanderson&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true&theme=radical" />
+            <img height="180em"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=kevinhayesanderson&show_icons=true&hide_border=true&layout=compact&theme=radical" />
+            <img height="180em"
+                src="https://github-readme-streak-stats.herokuapp.com?user=kevinhayesanderson&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D" />
             <br>
             <br>
             <p class="lead fs-4">My Certifications:</p>
@@ -122,6 +126,14 @@
                         <li class="list-group-item list-group-item-action bg-dark text-white"><span
                                 class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
                                 data-bs-tag="LL1">.NET Fundamental Concepts</span>
+                        </li>
+                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
+                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
+                                data-bs-tag="HR1">Angular (Basic) Certificate</span>
+                        </li>
+                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
+                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
+                                data-bs-tag="HR2">C# (Basic) Certificate</span>
                         </li>
                     </ul>
                 </div>
@@ -224,6 +236,16 @@
                     title.textContent = `.NET Fundamental Concepts`;
                     footer.textContent = 'Acquired on July 2023';
                     iframe.src = 'DotNET_Fundamental.pdf#toolbar=0';
+                    break;
+                case 'HR1':
+                    title.textContent = `Angular (Basic) Certificate`;
+                    footer.textContent = 'Acquired on April 2022';
+                    iframe.src = 'angular_basic.pdf#toolbar=0';
+                    break;
+                case 'HR2':
+                    title.textContent = `C# (Basic) Certificate`;
+                    footer.textContent = 'Acquired on March 2022';
+                    iframe.src = 'c_sharp_basic.pdf#toolbar=0';
                     break;
                 default:
             }
