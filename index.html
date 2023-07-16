@@ -61,7 +61,7 @@
                 src="https://github-readme-streak-stats.herokuapp.com?user=kevinhayesanderson&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D" />
             <br>
             <br>
-            <div id="adobe-dc-view" style="height: 476px; width: 600px; border: 1px solid #dadada;"></div>
+
             <p class="lead fs-4">My Certifications:</p>
             <ul class="nav nav-tabs" role="tablist">
                 <li class="nav-item" role="presentation">
@@ -164,7 +164,8 @@
                             </div>
                         </div>
                         <div class="modal-body">
-                            <iframe width="100%" height="100%"></iframe>
+                            <!-- <iframe width="100%" height="100%"></iframe> -->
+                            <div id="adobe-dc-view"></div>
                         </div>
                         <div class="modal-footer text-white"></div>
                     </div>
@@ -190,6 +191,29 @@
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
     <script>
+        embedDcView(file)
+        {
+            var adobeDCView = new AdobeDC.View({
+                clientId: "aa595366165a4cf28b834cf107b08f64",
+                divId: "adobe-dc-view",
+            });
+            adobeDCView.previewFile({
+                content: {
+                    location: {
+                        url: file,
+                    },
+                },
+                metaData: {
+                    fileName: file
+                }
+            }, {
+                embedMode: "SIZED_CONTAINER",
+                exitPDFViewerType: "CLOSE"
+            });
+        }
+        // document.addEventListener("adobe_dc_view_sdk.ready", function () {
+
+        // });
         var model1 = document.getElementById('model1')
         model1.addEventListener('show.bs.modal', function (event) {
             var button = event.relatedTarget;
@@ -200,79 +224,94 @@
             var iframe = model1.querySelector('.modal-body iframe');
             switch (recipient) {
                 case 'MC1':
-                    title.textContent = `Microsoft Certified: Azure Fundamentals`;
-                    footer.textContent = 'Acquired on December 2021.';
-                    iframe.src = 'az900.pdf#toolbar=0';
+                    // title.textContent = `Microsoft Certified: Azure Fundamentals`;
+                    // footer.textContent = 'Acquired on December 2021.';
+                    // iframe.src = 'az900.pdf#toolbar=0';
+                    embedDcView('az900.pdf');
                     break;
                 case 'MC2':
-                    title.textContent = `Microsoft Certified: Security, Compliance, and Identity Fundamentals`;
-                    footer.textContent = 'Acquired on February 2022.';
-                    iframe.src = 'sc900.pdf#toolbar=0';
+                    // title.textContent = `Microsoft Certified: Security, Compliance, and Identity Fundamentals`;
+                    // footer.textContent = 'Acquired on February 2022.';
+                    // iframe.src = 'sc900.pdf#toolbar=0';
+                    embedDcView('sc900.pdf');
                     break;
                 case 'MC3':
-                    title.textContent = `Microsoft Technology Associate for Software Development Fundamentals`;
-                    footer.textContent = 'Acquired on December 2016.';
-                    iframe.src = 'Cert6935534220.pdf#toolbar=0';
+                    // title.textContent = `Microsoft Technology Associate for Software Development Fundamentals`;
+                    // footer.textContent = 'Acquired on December 2016.';
+                    // iframe.src = 'Cert6935534220.pdf#toolbar=0';
+                    embedDcView('Cert6935534220.pdf');
                     break;
                 case 'MC4':
-                    title.textContent = `Microsoft Certified: Azure Data Fundamentals`;
-                    footer.textContent = 'Acquired on March 2022.';
-                    iframe.src = 'dp-900.pdf#toolbar=0';
+                    // title.textContent = `Microsoft Certified: Azure Data Fundamentals`;
+                    // footer.textContent = 'Acquired on March 2022.';
+                    // iframe.src = 'dp-900.pdf#toolbar=0';
+                    embedDcView('dp-900.pdf');
                     break;
                 case 'MC5':
-                    title.textContent = `Microsoft Certified: Azure AI Fundamentals`;
-                    footer.textContent = 'Acquired on April 2022.';
-                    iframe.src = 'ai900.pdf#toolbar=0';
+                    // title.textContent = `Microsoft Certified: Azure AI Fundamentals`;
+                    // footer.textContent = 'Acquired on April 2022.';
+                    // iframe.src = 'ai900.pdf#toolbar=0';
+                    embedDcView('ai900.pdf');
                     break;
                 case 'OTC1':
-                    title.textContent = `IBM Full Stack Cloud Developer`;
-                    footer.textContent = 'Acquired on March 2022.';
-                    iframe.src = 'CourseraVHS9BT8XSNAJ.pdf#toolbar=0';
+                    // title.textContent = `IBM Full Stack Cloud Developer`;
+                    // footer.textContent = 'Acquired on March 2022.';
+                    // iframe.src = 'CourseraVHS9BT8XSNAJ.pdf#toolbar=0';
+                    embedDcView('CourseraVHS9BT8XSNAJ.pdf');
                     break;
                 case 'OTC2':
-                    title.textContent = `Cloud Developer using Microsoft Azure`;
-                    footer.textContent = 'Acquired on July 2023';
-                    iframe.src = 'Cloud_Developer_Azure_Udacity.pdf#toolbar=0';
+                    // title.textContent = `Cloud Developer using Microsoft Azure`;
+                    // footer.textContent = 'Acquired on July 2023';
+                    // iframe.src = 'Cloud_Developer_Azure_Udacity.pdf#toolbar=0';
+                    embedDcView('Cloud_Developer_Azure_Udacity.pdf');
                     break;
                 case 'UC1':
-                    title.textContent = `Advanced Topics in C#`;
-                    footer.textContent = 'Acquired on January 2022';
-                    iframe.src = 'UC-Advanced_CS.pdf#toolbar=0';
+                    // title.textContent = `Advanced Topics in C#`;
+                    // footer.textContent = 'Acquired on January 2022';
+                    // iframe.src = 'UC-Advanced_CS.pdf#toolbar=0';
+                    embedDcView('UC-Advanced_CS.pdf');
                     break;
                 case 'UC2':
-                    title.textContent = `gRPC C# Masterclass: Build Modern API & Microservices`;
-                    footer.textContent = 'Acquired on Augest 2020';
-                    iframe.src = 'UC-Grpc_CS.pdf#toolbar=0';
+                    // title.textContent = `gRPC C# Masterclass: Build Modern API & Microservices`;
+                    // footer.textContent = 'Acquired on Augest 2020';
+                    // iframe.src = 'UC-Grpc_CS.pdf#toolbar=0';
+                    embedDcView('UC-Grpc_CS.pdf');
                     break;
                 case 'UC3':
-                    title.textContent = `Angular Testing Masterclass`;
-                    footer.textContent = 'Acquired on September 2020';
-                    iframe.src = 'UC-Angular_Testing.pdf#toolbar=0';
+                    // title.textContent = `Angular Testing Masterclass`;
+                    // footer.textContent = 'Acquired on September 2020';
+                    // iframe.src = 'UC-Angular_Testing.pdf#toolbar=0';
+                    embedDcView('UC-Angular_Testing.pdf');
                     break;
                 case 'UC4':
-                    title.textContent = `YAML 1`;
-                    footer.textContent = 'Acquired on July 2023';
-                    iframe.src = 'UC-Yaml_1.pdf#toolbar=0';
+                    // title.textContent = `YAML 1`;
+                    // footer.textContent = 'Acquired on July 2023';
+                    // iframe.src = 'UC-Yaml_1.pdf#toolbar=0';
+                    embedDcView('UC-Yaml_1.pdf');
                     break;
                 case 'UC5':
-                    title.textContent = `YAML 2`;
-                    footer.textContent = 'Acquired on July 2023';
-                    iframe.src = 'UC-Yaml_2.pdf#toolbar=0';
+                    // title.textContent = `YAML 2`;
+                    // footer.textContent = 'Acquired on July 2023';
+                    // iframe.src = 'UC-Yaml_2.pdf#toolbar=0';
+                    embedDcView('UC-Yaml_2.pdf');
                     break;
                 case 'LL1':
-                    title.textContent = `.NET Fundamental Concepts`;
-                    footer.textContent = 'Acquired on July 2023';
-                    iframe.src = 'DotNET_Fundamental.pdf#toolbar=0';
+                    // title.textContent = `.NET Fundamental Concepts`;
+                    // footer.textContent = 'Acquired on July 2023';
+                    // iframe.src = 'DotNET_Fundamental.pdf#toolbar=0';
+                    embedDcView('DotNET_Fundamental.pdf');
                     break;
                 case 'HR1':
-                    title.textContent = `Angular (Basic) Certificate`;
-                    footer.textContent = 'Acquired on April 2022';
-                    iframe.src = 'angular_basic.pdf#toolbar=0';
+                    // title.textContent = `Angular (Basic) Certificate`;
+                    // footer.textContent = 'Acquired on April 2022';
+                    // iframe.src = 'angular_basic.pdf#toolbar=0';
+                    embedDcView('angular_basic.pdf');
                     break;
                 case 'HR2':
-                    title.textContent = `C# (Basic) Certificate`;
-                    footer.textContent = 'Acquired on March 2022';
-                    iframe.src = 'c_sharp_basic.pdf#toolbar=0';
+                    // title.textContent = `C# (Basic) Certificate`;
+                    // footer.textContent = 'Acquired on March 2022';
+                    // iframe.src = 'c_sharp_basic.pdf#toolbar=0';
+                    embedDcView('c_sharp_basic.pdf');
                     break;
                 default:
             }
