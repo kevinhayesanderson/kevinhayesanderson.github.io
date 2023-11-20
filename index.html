@@ -1,321 +1,587 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="utf-8">
+  <head>
+    <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
-    <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1" />
+    <meta
+      id="viewport"
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+    />
     <title>Kevin Hayes Anderson</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-    <link rel="manifest" href="/site.webmanifest">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="manifest" href="/site.webmanifest" />
     <style>
-        .footer {
-            position: fixed;
-            left: 0;
-            bottom: 0;
-            width: 100%;
-            color: white;
-            text-align: center;
-        }
+      .footer {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+        color: white;
+        text-align: center;
+      }
 
-        .modal {
-            --bs-modal-bg: #212529;
-        }
+      .modal {
+        --bs-modal-bg: #212529;
+      }
 
-        #the-canvas {
-            border: 1px solid black;
-            direction: ltr;
-        }
+      #the-canvas {
+        border: 1px solid black;
+        direction: ltr;
+      }
     </style>
-</head>
+  </head>
 
-<body class="bg-dark">
+  <body class="bg-dark">
     <div class="container text-white">
-        <br>
-        <nav class="nav">
-            <h2 class="display-6">Hello there<span>&#128400;</span>!</h2>
-        </nav>
-        <br>
-        <div>
-            <p class="lead lead fs-4">I'm Kevin Hayes Anderson, Senior software and cloud engineer with 6+ years of work
-                experience in agile enterprise software
-                development, cloud architecting, development in multiple and building apps with .NET and Angular
-                frameworks.</p>
-            <p class="lead lead fs-4">Experience
-                in Microsoft Azure Kubernetes Services. Azure App Services, Azure functions, Azure logic Apps Azure
-                Storage, Azure
-                Active Directory (AD), Cosmos DB / Document DB, API Gateway.</p>
-            <p class="lead lead fs-4">Experience performing continuous
-                integration and continuous
-                deployment using Azure DevOps.</p>
-            <p class="lead lead fs-4">Ask me about .Net, Azure and Cloud native applications.</p>
-            <p class="lead lead fs-4">How to reach me: <a href="mailto:kevinhayesanderson@gmail.com">EMail</a>,
-                <a href="https://www.linkedin.com/in/kevinhayesanderson/" target="_blank">Linkedin</a>.
-            </p>
-            <p class="lead fs-4">My <a href="https://github.com/kevinhayesanderson" target="_blank">GitHub</a>, <a
-                    href="Resume-Kevin_Hayes_Anderson.pdf" target="_blank">Resume</a> & <a
-                    href="https://www.credly.com/users/kevin-hayes-anderson" target="_blank">Credly profile</a>.</p>
-            <img height="180em"
-                src="https://github-readme-stats.vercel.app/api?username=kevinhayesanderson&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true&theme=radical" />
-            <img height="180em"
-                src="https://github-readme-stats.vercel.app/api/top-langs/?username=kevinhayesanderson&show_icons=true&hide_border=true&layout=compact&theme=radical" />
-            <img height="180em"
-                src="https://github-readme-streak-stats.herokuapp.com?user=kevinhayesanderson&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D" />
-            <br>
-            <br>
-            <p class="lead fs-4">My Certifications:</p>
-            <ul class="nav nav-tabs" role="tablist">
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link active" id="tab1" data-bs-toggle="tab" data-bs-target="#tabpanel1"
-                        type="button" role="tab" aria-controls="tabpanel1" aria-selected="true"> <span
-                            class="fs-5">Microsoft</span></button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="tab2" data-bs-toggle="tab" data-bs-target="#tabpanel2" type="button"
-                        role="tab" aria-controls="tabpanel2" aria-selected="false"><span
-                            class="fs-5">Udemy</span></button>
-                </li>
-                <li class="nav-item" role="presentation">
-                    <button class="nav-link" id="tab3" data-bs-toggle="tab" data-bs-target="#tabpanel3" type="button"
-                        role="tab" aria-controls="tabpanel3" aria-selected="false"><span
-                            class="fs-5">Others</span></button>
-                </li>
+      <br />
+      <nav class="nav">
+        <h2 class="display-6">Hello there<span>&#128400;</span>!</h2>
+      </nav>
+      <br />
+      <div>
+        <p class="lead lead fs-4">
+          I'm Kevin Hayes Anderson, Senior software and cloud engineer with 6+
+          years of work experience in agile enterprise software development,
+          cloud architecting, development in multiple and building apps with
+          .NET and Angular frameworks.
+        </p>
+        <p class="lead lead fs-4">
+          Experience in Microsoft Azure Kubernetes Services. Azure App Services,
+          Azure functions, Azure logic Apps Azure Storage, Azure Active
+          Directory (AD), Cosmos DB / Document DB, API Gateway.
+        </p>
+        <p class="lead lead fs-4">
+          Experience performing continuous integration and continuous deployment
+          using Azure DevOps.
+        </p>
+        <p class="lead lead fs-4">
+          Ask me about .Net, Azure and Cloud native applications.
+        </p>
+        <p class="lead lead fs-4">
+          How to reach me:
+          <a href="mailto:kevinhayesanderson@gmail.com">EMail</a>,
+          <a
+            href="https://www.linkedin.com/in/kevinhayesanderson/"
+            target="_blank"
+            >Linkedin</a
+          >.
+        </p>
+        <p class="lead fs-4">
+          My
+          <a href="https://github.com/kevinhayesanderson" target="_blank"
+            >GitHub</a
+          >,
+          <a href="Resume-Kevin_Hayes_Anderson.pdf" target="_blank">Resume</a> &
+          <a
+            href="https://www.credly.com/users/kevin-hayes-anderson"
+            target="_blank"
+            >Credly profile</a
+          >.
+        </p>
+        <img
+          height="180em"
+          src="https://github-readme-stats.vercel.app/api?username=kevinhayesanderson&show_icons=true&hide_border=true&&count_private=true&include_all_commits=true&theme=radical"
+        />
+        <img
+          height="180em"
+          src="https://github-readme-stats.vercel.app/api/top-langs/?username=kevinhayesanderson&show_icons=true&hide_border=true&layout=compact&theme=radical"
+        />
+        <img
+          height="180em"
+          src="https://github-readme-streak-stats.herokuapp.com?user=kevinhayesanderson&theme=radical&hide_border=true&date_format=j%20M%5B%20Y%5D"
+        />
+        <br />
+        <br />
+        <p class="lead fs-4">My Certifications:</p>
+        <ul class="nav nav-tabs" role="tablist">
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link active"
+              id="tab1"
+              data-bs-toggle="tab"
+              data-bs-target="#tabpanel1"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel1"
+              aria-selected="true"
+            >
+              <span class="fs-5">Microsoft</span>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab2"
+              data-bs-toggle="tab"
+              data-bs-target="#tabpanel2"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel2"
+              aria-selected="false"
+            >
+              <span class="fs-5">Udemy</span>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab3"
+              data-bs-toggle="tab"
+              data-bs-target="#tabpanel3"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel3"
+              aria-selected="false"
+            >
+              <span class="fs-5">Angular</span>
+            </button>
+          </li>
+          <li class="nav-item" role="presentation">
+            <button
+              class="nav-link"
+              id="tab4"
+              data-bs-toggle="tab"
+              data-bs-target="#tabpanel4"
+              type="button"
+              role="tab"
+              aria-controls="tabpanel4"
+              aria-selected="false"
+            >
+              <span class="fs-5">Others</span>
+            </button>
+          </li>
+        </ul>
+        <div class="tab-content">
+          <div
+            class="tab-pane fade show active"
+            id="tabpanel1"
+            role="tabpanel"
+            aria-labelledby="tab1"
+          >
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="MC6"
+                  >Microsoft Certified: Azure Developer Associate</span
+                >
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="MC5"
+                  >Microsoft Certified: Azure AI Fundamentals</span
+                >
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="MC1"
+                  >Microsoft Certified: Azure Fundamentals</span
+                >
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="MC4"
+                  >Microsoft Certified: Azure Data Fundamentals</span
+                >
+              </li>
+
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="MC2"
+                  >Microsoft Certified: Security, Compliance, and Identity
+                  Fundamentals</span
+                >
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="MC3"
+                  >Microsoft Technology Associate for Software Development
+                  Fundamentals</span
+                >
+              </li>
             </ul>
-            <div class="tab-content">
-                <div class="tab-pane fade show active" id="tabpanel1" role="tabpanel" aria-labelledby="tab1">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="MC6">Microsoft Certified: Azure Developer Associate</span>
-                        </li>
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="MC5">Microsoft Certified: Azure AI Fundamentals</span>
-                        </li>
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="MC1">Microsoft Certified: Azure Fundamentals</span></li>
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="MC4">Microsoft Certified: Azure Data Fundamentals</span>
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="MC2">Microsoft Certified: Security, Compliance, and Identity
-                                Fundamentals</span></li>
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="MC3">Microsoft Technology Associate for Software Development
-                                Fundamentals</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tab-pane fade" id="tabpanel2" role="tabpanel" aria-labelledby="tab2">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="UC1">Advanced Topics in C#</span>
-                        </li>
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="UC2">gRPC C# Masterclass: Build Modern API & Microservices</span>
-                        </li>
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="UC3">Angular Testing Masterclass</span>
-                        </li>
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="UC4">YAML_1</span>&emsp;
-                            <span class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="UC5">YAML_2</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="tab-pane fade" id="tabpanel3" role="tabpanel" aria-labelledby="tab3">
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="OTC2">Cloud Developer using Microsoft Azure</span>
-                        </li>
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="OTC1">IBM Full Stack Cloud
-                                Developer</span>
-                        </li>
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="LL1">.NET Fundamental Concepts</span>
-                        </li>
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="HR1">Angular (Basic) Certificate</span>
-                        </li>
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="HR2">C# (Basic) Certificate</span>
-                        </li>
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="LL2">Threading in C#</span>&emsp;
-                            <span class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="LL4">Advanced Threading in C#</span>
-                        </li>
-                        <li class="list-group-item list-group-item-action bg-dark text-white"><span
-                                class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
-                                data-bs-tag="LL3">Performance with C#</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-            <div class="modal fade" id="model1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
-                aria-labelledby="model1Label" aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-                    <div class="modal-content">
-                        <div class="modal-header text-white">
-                            <h6 class="modal-title" id="model1Label"></h6>
-                            <div data-bs-theme="dark">
-                                <button type="button" class="btn-close" data-bs-theme="dark" data-bs-dismiss="modal"
-                                    aria-label="Close"></button>
-                            </div>
-                        </div>
-                        <div class="modal-body">
-                            <iframe id="iframe" width="100%" height="800"></iframe>
-                        </div>
-                        <div class="modal-footer text-white"></div>
-                    </div>
-                </div>
-            </div>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="tabpanel2"
+            role="tabpanel"
+            aria-labelledby="tab2"
+          >
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="UC1"
+                  >Advanced Topics in C#</span
+                >
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="UC2"
+                  >gRPC C# Masterclass: Build Modern API & Microservices</span
+                >
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="UC3"
+                  >Angular Testing Masterclass</span
+                >
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="UC4"
+                  >YAML_1</span
+                >&emsp;
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="UC5"
+                  >YAML_2</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="tabpanel3"
+            role="tabpanel"
+            aria-labelledby="tab3"
+          >
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="UCA1"
+                  >Angular Basics (v16)</span
+                >
+              </li>
+            </ul>
+          </div>
+          <div
+            class="tab-pane fade"
+            id="tabpanel4"
+            role="tabpanel"
+            aria-labelledby="tab4"
+          >
+            <ul class="list-group list-group-flush">
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="OTC2"
+                  >Cloud Developer using Microsoft Azure</span
+                >
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="OTC1"
+                  >IBM Full Stack Cloud Developer</span
+                >
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="LL1"
+                  >.NET Fundamental Concepts</span
+                >
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="HR1"
+                  >Angular (Basic) Certificate</span
+                >
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="HR2"
+                  >C# (Basic) Certificate</span
+                >
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="LL2"
+                  >Threading in C#</span
+                >&emsp;
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="LL4"
+                  >Advanced Threading in C#</span
+                >
+              </li>
+              <li
+                class="list-group-item list-group-item-action bg-dark text-white"
+              >
+                <span
+                  class="fs-5 link-primary"
+                  data-bs-toggle="modal"
+                  data-bs-target="#model1"
+                  data-bs-tag="LL3"
+                  >Performance with C#</span
+                >
+              </li>
+            </ul>
+          </div>
         </div>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
-        <br>
+        <div
+          class="modal fade"
+          id="model1"
+          data-bs-backdrop="static"
+          data-bs-keyboard="false"
+          tabindex="-1"
+          aria-labelledby="model1Label"
+          aria-hidden="true"
+        >
+          <div
+            class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable"
+          >
+            <div class="modal-content">
+              <div class="modal-header text-white">
+                <h6 class="modal-title" id="model1Label"></h6>
+                <div data-bs-theme="dark">
+                  <button
+                    type="button"
+                    class="btn-close"
+                    data-bs-theme="dark"
+                    data-bs-dismiss="modal"
+                    aria-label="Close"
+                  ></button>
+                </div>
+              </div>
+              <div class="modal-body">
+                <iframe id="iframe" width="100%" height="800"></iframe>
+              </div>
+              <div class="modal-footer text-white"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
+      <br />
     </div>
     <div class="footer text-white">
-        <p><em>
-                <span>Author: Kevin Hayes Anderson </span>@
-                <a href="mailto:kevinhayesanderson@gmail.com">kevinhayesanderson@gmail.com</a>
-            </em></p>
+      <p>
+        <em>
+          <span>Author: Kevin Hayes Anderson </span>@
+          <a href="mailto:kevinhayesanderson@gmail.com"
+            >kevinhayesanderson@gmail.com</a
+          >
+        </em>
+      </p>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
     <script>
-        var model1 = document.getElementById('model1');
-        model1.addEventListener('show.bs.modal', function (event) {
-            var button = event.relatedTarget;
-            var recipient = button.getAttribute('data-bs-tag');
-            var title = model1.querySelector('.modal-title');
-            var footer = model1.querySelector('.modal-footer');
-            var iframe = document.getElementById('iframe');
-            switch (recipient) {
-                case 'MC1':
-                    title.textContent = `Microsoft Certified: Azure Fundamentals`;
-                    footer.textContent = 'Acquired on December 2021.';
-                    iframe.src = 'az900.pdf';
-                    break;
-                case 'MC2':
-                    title.textContent = `Microsoft Certified: Security, Compliance, and Identity Fundamentals`;
-                    footer.textContent = 'Acquired on February 2022.';
-                    iframe.src = 'sc900.pdf';
-                    break;
-                case 'MC3':
-                    title.textContent = `Microsoft Technology Associate for Software Development Fundamentals`;
-                    footer.textContent = 'Acquired on December 2016.';
-                    iframe.src = 'Cert6935534220.pdf';
-                    break;
-                case 'MC4':
-                    title.textContent = `Microsoft Certified: Azure Data Fundamentals`;
-                    footer.textContent = 'Acquired on March 2022.';
-                    iframe.src = 'dp-900.pdf';
-                    break;
-                case 'MC5':
-                    title.textContent = `Microsoft Certified: Azure AI Fundamentals`;
-                    footer.textContent = 'Acquired on April 2022.';
-                    iframe.src = 'ai900.pdf';
-                    break;
-                case 'MC6':
-                    title.textContent = `Microsoft Certified: Azure Developer Associate`;
-                    footer.textContent = 'Acquired on October 2023.';
-                    iframe.src = 'AZ_204.pdf';
-                    break;
-                case 'OTC1':
-                    title.textContent = `IBM Full Stack Cloud Developer`;
-                    footer.textContent = 'Acquired on March 2022.';
-                    iframe.src = 'CourseraVHS9BT8XSNAJ.pdf';
-                    break;
-                case 'OTC2':
-                    title.textContent = `Cloud Developer using Microsoft Azure`;
-                    footer.textContent = 'Acquired on July 2023';
-                    iframe.src = 'Cloud_Developer_Azure_Udacity.pdf';
-                    break;
-                case 'UC1':
-                    title.textContent = `Advanced Topics in C#`;
-                    footer.textContent = 'Acquired on January 2022';
-                    iframe.src = 'UC-Advanced_CS.pdf';
-                    break;
-                case 'UC2':
-                    title.textContent = `gRPC C# Masterclass: Build Modern API & Microservices`;
-                    footer.textContent = 'Acquired on Augest 2020';
-                    iframe.src = 'UC-Grpc_CS.pdf';
-                    break;
-                case 'UC3':
-                    title.textContent = `Angular Testing Masterclass`;
-                    footer.textContent = 'Acquired on September 2020';
-                    iframe.src = 'UC-Angular_Testing.pdf';
-                    break;
-                case 'UC4':
-                    title.textContent = `YAML 1`;
-                    footer.textContent = 'Acquired on July 2023';
-                    iframe.src = 'UC-Yaml_1.pdf';
-                    break;
-                case 'UC5':
-                    title.textContent = `YAML 2`;
-                    footer.textContent = 'Acquired on July 2023';
-                    iframe.src = 'UC-Yaml_2.pdf';
-                    break;
-                case 'LL1':
-                    title.textContent = `.NET Fundamental Concepts`;
-                    footer.textContent = 'Acquired on July 2023';
-                    iframe.src = 'DotNET_Fundamental.pdf';
-                    break;
-                case 'LL2':
-                    title.textContent = `Threading in C#`;
-                    footer.textContent = 'Acquired on July 2023';
-                    iframe.src = 'Threading_in_CSharp.pdf';
-                    break;
-                case 'LL3':
-                    title.textContent = `Performance with C#`;
-                    footer.textContent = 'Acquired on July 2023';
-                    iframe.src = 'Performance_CSharp.pdf';
-                    break;
-                case 'LL4':
-                    title.textContent = `Advanced Threading in C#`;
-                    footer.textContent = 'Acquired on August 2023';
-                    iframe.src = 'Advanced_Threading_CSharp.pdf';
-                    break;
-                case 'HR1':
-                    title.textContent = `Angular (Basic) Certificate`;
-                    footer.textContent = 'Acquired on April 2022';
-                    iframe.src = 'angular_basic.pdf';
-                    break;
-                case 'HR2':
-                    title.textContent = `C# (Basic) Certificate`;
-                    footer.textContent = 'Acquired on March 2022';
-                    iframe.src = 'c_sharp_basic.pdf';
-                    break;
-                default:
-            }
-        })
+      var model1 = document.getElementById("model1");
+      model1.addEventListener("show.bs.modal", function (event) {
+        var button = event.relatedTarget;
+        var recipient = button.getAttribute("data-bs-tag");
+        var title = model1.querySelector(".modal-title");
+        var footer = model1.querySelector(".modal-footer");
+        var iframe = document.getElementById("iframe");
+        switch (recipient) {
+          case "MC1":
+            title.textContent = `Microsoft Certified: Azure Fundamentals`;
+            footer.textContent = "Acquired on December 2021.";
+            iframe.src = "az900.pdf";
+            break;
+          case "MC2":
+            title.textContent = `Microsoft Certified: Security, Compliance, and Identity Fundamentals`;
+            footer.textContent = "Acquired on February 2022.";
+            iframe.src = "sc900.pdf";
+            break;
+          case "MC3":
+            title.textContent = `Microsoft Technology Associate for Software Development Fundamentals`;
+            footer.textContent = "Acquired on December 2016.";
+            iframe.src = "Cert6935534220.pdf";
+            break;
+          case "MC4":
+            title.textContent = `Microsoft Certified: Azure Data Fundamentals`;
+            footer.textContent = "Acquired on March 2022.";
+            iframe.src = "dp-900.pdf";
+            break;
+          case "MC5":
+            title.textContent = `Microsoft Certified: Azure AI Fundamentals`;
+            footer.textContent = "Acquired on April 2022.";
+            iframe.src = "ai900.pdf";
+            break;
+          case "MC6":
+            title.textContent = `Microsoft Certified: Azure Developer Associate`;
+            footer.textContent = "Acquired on October 2023.";
+            iframe.src = "AZ_204.pdf";
+            break;
+          case "OTC1":
+            title.textContent = `IBM Full Stack Cloud Developer`;
+            footer.textContent = "Acquired on March 2022.";
+            iframe.src = "CourseraVHS9BT8XSNAJ.pdf";
+            break;
+          case "OTC2":
+            title.textContent = `Cloud Developer using Microsoft Azure`;
+            footer.textContent = "Acquired on July 2023";
+            iframe.src = "Cloud_Developer_Azure_Udacity.pdf";
+            break;
+          case "UCA1":
+            title.textContent = `Angular Basics (v16)`;
+            footer.textContent = "Issued: 20th, November 2023";
+            iframe.src = "uc-angularv16-basics.pdf";
+            break;
+          case "UC1":
+            title.textContent = `Advanced Topics in C#`;
+            footer.textContent = "Acquired on January 2022";
+            iframe.src = "UC-Advanced_CS.pdf";
+            break;
+          case "UC2":
+            title.textContent = `gRPC C# Masterclass: Build Modern API & Microservices`;
+            footer.textContent = "Acquired on Augest 2020";
+            iframe.src = "UC-Grpc_CS.pdf";
+            break;
+          case "UC3":
+            title.textContent = `Angular Testing Masterclass`;
+            footer.textContent = "Acquired on September 2020";
+            iframe.src = "UC-Angular_Testing.pdf";
+            break;
+          case "UC4":
+            title.textContent = `YAML 1`;
+            footer.textContent = "Acquired on July 2023";
+            iframe.src = "UC-Yaml_1.pdf";
+            break;
+          case "UC5":
+            title.textContent = `YAML 2`;
+            footer.textContent = "Acquired on July 2023";
+            iframe.src = "UC-Yaml_2.pdf";
+            break;
+          case "LL1":
+            title.textContent = `.NET Fundamental Concepts`;
+            footer.textContent = "Acquired on July 2023";
+            iframe.src = "DotNET_Fundamental.pdf";
+            break;
+          case "LL2":
+            title.textContent = `Threading in C#`;
+            footer.textContent = "Acquired on July 2023";
+            iframe.src = "Threading_in_CSharp.pdf";
+            break;
+          case "LL3":
+            title.textContent = `Performance with C#`;
+            footer.textContent = "Acquired on July 2023";
+            iframe.src = "Performance_CSharp.pdf";
+            break;
+          case "LL4":
+            title.textContent = `Advanced Threading in C#`;
+            footer.textContent = "Acquired on August 2023";
+            iframe.src = "Advanced_Threading_CSharp.pdf";
+            break;
+          case "HR1":
+            title.textContent = `Angular (Basic) Certificate`;
+            footer.textContent = "Acquired on April 2022";
+            iframe.src = "angular_basic.pdf";
+            break;
+          case "HR2":
+            title.textContent = `C# (Basic) Certificate`;
+            footer.textContent = "Acquired on March 2022";
+            iframe.src = "c_sharp_basic.pdf";
+            break;
+          default:
+        }
+      });
     </script>
-</body>
-
+  </body>
 </html>
