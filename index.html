@@ -42,14 +42,15 @@
     <br />
     <div>
       <p class="lead fs-4">
-        I am Kevin Hayes Anderson, a senior software and cloud engineer with
-        7 years of experience in agile enterprise software development, cloud
-        architecture, and building .NET and Angular apps.
+        I am Kevin Hayes Anderson, a senior software and cloud engineer with 7 years of experience in agile enterprise
+        software development, cloud architecture, and development in multiple languages and microservices.
       </p>
       <p class="lead fs-4">
-        I have experience with Azure Kubernetes Services, App Services,
-        Functions, Storage, and Active Directory. I also perform continuous
-        integration and deployment using Azure DevOps.
+        Proficient in functional, low-level programming and Microsoft Azure Cloud Services.
+      </p>
+      <p class="lead fs-4">
+        Interested in working with microservices using <a class="link-info" href="https://www.rust-lang.org/"
+          target="_blank">Rust</a>.
       </p>
       <p class="lead fs-4">
         Currently I am learning <a class="link-info" href="https://www.rust-lang.org/"
@@ -98,6 +99,12 @@
         <li class="nav-item" role="presentation">
           <button class="nav-link" id="tab4" data-bs-toggle="tab" data-bs-target="#tabpanel4" type="button" role="tab"
             aria-controls="tabpanel4" aria-selected="false">
+            <span class="fs-5">Machine Learning</span>
+          </button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link" id="tab5" data-bs-toggle="tab" data-bs-target="#tabpanel5" type="button" role="tab"
+            aria-controls="tabpanel5" aria-selected="false">
             <span class="fs-5">Others</span>
           </button>
         </li>
@@ -167,6 +174,15 @@
         <div class="tab-pane fade" id="tabpanel4" role="tabpanel" aria-labelledby="tab4">
           <ul class="list-group list-group-flush">
             <li class="list-group-item list-group-item-action bg-dark text-white">
+              <span class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1" data-bs-tag="ML1LA">Linear
+                Algebra for Machine Learning and Data
+                Science</span>
+            </li>
+          </ul>
+        </div>
+        <div class="tab-pane fade" id="tabpanel5" role="tabpanel" aria-labelledby="tab5">
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item list-group-item-action bg-dark text-white">
               <span class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1" data-bs-tag="OTC2">Cloud
                 Developer using Microsoft Azure</span>
             </li>
@@ -222,9 +238,8 @@
     <br />
   </div>
   <div>
-    <iframe style="border-radius:15px"
-      src="https://open.spotify.com/embed/track/3BJe4B8zGnqEdQPMvfVjuS?utm_source=generator" width="100%" height="250"
-      allow="autoplay"></iframe>
+    <iframe style="border-radius:15px" src="https://open.spotify.com/embed/track/3BJe4B8zGnqEdQPMvfVjuS" width="100%"
+      height="250" allow="autoplay"></iframe>
   </div>
   <div>
     <p>
@@ -346,9 +361,28 @@
           footer.textContent = "Acquired on March 2022";
           iframe.src = "c_sharp_basic.pdf";
           break;
+        case "ML1LA":
+          title.textContent = `Linear Algebra for Machine Learning and Data Science`;
+          footer.textContent = "Acquired on February 2024";
+          iframe.src = "CourseraZCBN329UFH7T.pdf";
+          break;
         default:
       }
     });
+
+    function autoplay() {
+      var t = setTimeout(function () {
+        var button = document.querySelector('[aria-label="Play"]') || false;
+        if (button) {
+          console.log('Click', button)
+          button.click()
+        }
+      }, 999)
+    }
+    document.addEventListener('DOMContentLoaded', (event) => {
+      autoplay()
+    })
+
   </script>
 </body>
 
