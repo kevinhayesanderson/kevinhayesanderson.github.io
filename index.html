@@ -173,9 +173,24 @@
         <div class="tab-pane fade" id="tabpanel4" role="tabpanel" aria-labelledby="tab4">
           <ul class="list-group list-group-flush">
             <li class="list-group-item list-group-item-action bg-dark text-white">
+              <span class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
+                data-bs-tag="ML1MATH">Mathematics for Machine
+                Learning and Data
+                Science</span>
+            </li>
+            <li class="list-group-item list-group-item-action bg-dark text-white">
+              <span class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
+                data-bs-tag="ML1CAL">Calculus for Machine Learning and Data Science</span>
+            </li>
+            <li class="list-group-item list-group-item-action bg-dark text-white">
               <span class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1" data-bs-tag="ML1LA">Linear
                 Algebra for Machine Learning and Data
                 Science</span>
+            </li>
+            <li class="list-group-item list-group-item-action bg-dark text-white">
+              <span class="fs-5 link-primary" data-bs-toggle="modal" data-bs-target="#model1"
+                data-bs-tag="ML1PS">Probability & Statistics for Machine Learning &
+                Data Science</span>
             </li>
           </ul>
         </div>
@@ -352,6 +367,21 @@
           title.textContent = `Linear Algebra for Machine Learning and Data Science`;
           footer.textContent = "Acquired on February 2024";
           iframe.src = "CourseraZCBN329UFH7T.pdf";
+          break;
+        case "ML1CAL":
+          title.textContent = `Calculus for Machine Learning and Data Science`;
+          footer.textContent = "Acquired on March 2024";
+          iframe.src = "CourseraBN7RBEW9HSAU.pdf";
+          break;
+        case "ML1PS":
+          title.textContent = `Probability & Statistics for Machine Learning & Data Science`;
+          footer.textContent = "Acquired on March 2024";
+          iframe.src = "CourseraWTTL6R6RL6UP.pdf";
+          break;
+        case "ML1MATH":
+          title.textContent = `Mathematics for Machine Learning and Data Science`;
+          footer.textContent = "Acquired on March 2024";
+          iframe.src = "CourseraWUV83Z4WXB3T.pdf";
           break;
         default:
       }
